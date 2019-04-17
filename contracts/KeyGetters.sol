@@ -1,6 +1,5 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-
 import "./KeyBase.sol";
 // 根据ERC725规范实现getter功能
 // key data使用KeyStore库

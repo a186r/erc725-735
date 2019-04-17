@@ -16,6 +16,7 @@ contract Pausable is KeyBase {
 
     modifier whenPaused() {
         require(paused, "contract not paused");
+        _;
     }
 
     // 由管理密钥或者身份本身调用暂停，触发停止状态
