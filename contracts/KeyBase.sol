@@ -1,4 +1,4 @@
-pragma solidity >= 0.5.7 < 0.6.0;
+pragma solidity >=0.4.21 <0.6.0;
 
 import "./KeyStore.sol";
 
@@ -14,7 +14,7 @@ contract KeyBase {
     using keyStore for KeyStore.Keys;
     KeyStore.Keys internal allKeys;
 
-    // 合约管理的密钥数
+    // 合约中的密钥数
     function numKeys()
         external
         view

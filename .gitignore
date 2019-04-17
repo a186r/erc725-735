@@ -1,0 +1,8 @@
+# truffle build directory
+build
+
+# IntelliJ IDE
+.idea
+
+# Dependency directory
+node_modules

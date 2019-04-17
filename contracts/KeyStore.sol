@@ -1,4 +1,4 @@
-pragma solidity >= 0.5.7 < 0.6.0
+pragma solidity >=0.4.21 <0.6.0;
 
 /// @dev 用于管理ERC725 key的数组的库
 library KeyStore{
