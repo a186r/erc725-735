@@ -14,14 +14,14 @@ library ERC165Query{
         bool success;
         bool result;
 
-        (success || !result) = noThrowCall(_contract, ERC165_ID);
+        (success, result) = noThrowCall(_contract, ERC165_ID);
         if(!success || !result) {
             return false;
         }
 
         (success, result) = noThrowCall(_contract, INVALID_ID);
-        if(!success || result) {
-            return false
+        if (!success || result) {
+            return false;
         }
 
         (success, result) = noThrowCall(_contract, _interfaceId);
